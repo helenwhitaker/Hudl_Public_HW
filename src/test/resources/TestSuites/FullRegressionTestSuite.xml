@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="FullRegressionTestSuite" parallel="false">
+    <!-- Including Smoke Test Suite -->
+    <suite-files>
+        <suite-file path="SmokeTestSuite.xml"/>
+    </suite-files>
+
+    <!-- Including Regression Test Suite -->
+    <suite-files>
+        <suite-file path="RegressionTestSuite.xml"/>
+    </suite-files>
+</suite>
+

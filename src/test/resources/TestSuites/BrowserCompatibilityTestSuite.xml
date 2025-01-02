@@ -1,0 +1,94 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="BrowserCompatibilityTestSuite" verbose="1">
+
+    <test name="Positive Login Test in Chrome Ignore Cookies">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="com.testautomation.tests.login.LoginTests">
+                <methods>
+                    <include name="testLoginFunctionalityIgnoreCookiesIgnoreAdRoll"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Positive Login Test in Chrome Accept Cookies">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="com.testautomation.tests.login.LoginTests">
+                <methods>
+                    <include name="testLoginFunctionalityAcceptCookiesIgnoreAdRoll"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <test name="Positive Login Test in Chrome Reject Cookies">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="com.testautomation.tests.login.LoginTests">
+                <methods>
+                    <include name="testLoginFunctionalityRejectCookiesIgnoreAdRoll"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Negative Login Test in Chrome Invalid Password">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="com.testautomation.tests.login.LoginTests">
+                <methods>
+                    <include name="negativeLoginTestInvalidPassword"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Negative Login Test in Chrome Invalid Username">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="com.testautomation.tests.login.LoginTests">
+                <methods>
+                    <include name="negativeLoginTestInvalidUsername"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Positive Login Test in Edge Ignore Cookies">
+        <parameter name="browser" value="edge"></parameter>
+        <classes>
+            <class name="com.testautomation.tests.login.LoginTests">
+                <methods>
+                    <include name="testLoginFunctionalityIgnoreCookiesIgnoreAdRoll"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Negative Login Test in Edge Invalid Password">
+        <parameter name="browser" value="edge"></parameter>
+        <classes>
+            <class name="com.testautomation.tests.login.LoginTests">
+                <methods>
+                    <include name="negativeLoginTestInvalidPassword"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Negative Login Test in Edge Invalid Username">
+        <parameter name="browser" value="edge"></parameter>
+        <classes>
+            <class name="com.testautomation.tests.login.LoginTests">
+                <methods>
+                    <include name="negativeLoginTestInvalidUsername"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
