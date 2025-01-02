@@ -101,7 +101,7 @@ The project includes the following test suites:
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone [Link Text](https://github.com/helenwhitaker/Hudl_HW_Public.git)
+   git clone [Link Text](https://github.com/helenwhitaker/Hudl_Public_HW.git)
 
 2. Copy the user name and password data in the credentials.properties.txt file attached to the email into the credentials.properties file in the project found at src/main/resources/testdata/credentials.properties  
 
